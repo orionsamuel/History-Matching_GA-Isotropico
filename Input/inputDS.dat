@@ -1,0 +1,178 @@
+*title{
+GMSH para fortran - malhas/2D/slab_5_intermediario.msh
+}
+*exec{
+         1
+}
+*iprtin{
+         1
+}
+*tipo_arq_saida{
+         0
+}
+*solver_pressao{
+skyline
+}
+*solver_velocidade_e_pressao{
+skyline
+}
+*solver_transporte{
+skyline
+}
+*metodo_hidrodinamica{
+mista
+}
+*metodo_saturacao{
+cental_upwind
+}
+*metodo_concentracao{
+galerkin
+}
+*metodo_retencao{
+runge_kutta
+}
+*metodo_adsorcao{
+runge_kutta
+}
+*metodo_reconstrucao{
+least_square
+}
+*nsd{
+         2
+}
+*numnp{
+       790
+}
+*numel{
+      1473
+}
+*numel_bordas{
+       105
+}
+*nen{
+         3
+}
+*npint{
+         3
+}
+*altitude{
+1.686e+01
+}
+*nlvectP{
+         1
+}
+*nlvectVeP{
+         1
+}
+*nlvectT{
+         1
+}
+*nlvectF{
+         0
+}
+*grav{
+  0.000000  0.000000  0.000000
+}
+*deltaT{
+2.500000e+02
+}
+*tempoTotalSimulacao{
+5.000000e+03
+}
+*max_iter_pressao{
+      1000
+}
+*viscosidade_agua{
+ 1.15741e-08
+}
+*viscosidade_oleo{
+ 5.78704e-08
+}
+*densidade_agua{
+1084.000000
+}
+*densidade_oleo{
+870.000000
+}
+*constante_dano_porosidade_retencao{
+  0.000000
+}
+*constante_dano_porosidade_adsorcao{
+  0.000000
+}
+*constante_dano_permeabilidade_retencao{
+  0.000000
+}
+*constante_dano_permeabilidade_adsorcao{
+  0.000000
+}
+*coeficiente_adsorcao{
+  0.000000
+}
+*coeficiente_filtracao{
+  0.000000
+}
+*coeficiente_retencao_max{
+  0.000000
+}
+*coeficiente_adsorcao_max{
+ 10.000000
+}
+*perm_relativa_agua{
+  0.638700
+}
+*perm_relativa_oleo{
+  0.998400
+}
+*saturacao_residual_agua{
+  0.200000
+}
+*saturacao_residual_oleo{
+  0.200000
+}
+*expoente_lei_perm_agua{
+  2.000000
+}
+*expoente_lei_perm_oleo{
+  3.000000
+}
+*numero_de_courant{
+  0.500000
+}
+*prop_fisica_meio{
+         1   2.000000e-01   1.000000e-15   1.000000e-15   1.000000e-15   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+         2   2.000000e-01   1.000000e-12   1.000000e-12   1.000000e-125   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+         3   2.000000e-01   1.000000e-12   1.000000e-12   1.000000e-12   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+         4   2.000000e-01   1.000000e-12   1.000000e-12   1.000000e-12   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+         5   2.000000e-01   1.000000e-15   1.000000e-15   1.000000e-15   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00   0.000000e+00
+}
+*nummat{
+         5
+}
+*include{
+coordenadasNodais.inc
+}
+*include{
+conectividadesNodais.inc
+}
+*include{
+condicoesDeContorno.inc
+}
+*include{
+condicoesIniciais.inc
+}
+*include{
+coordenadasCentroides.inc
+}
+*include{
+conectividadesFaces.inc
+}
+*include{
+elementosVizinhos.inc
+}
+*include{
+volumes.inc
+}
+*include{
+vetorNormalFaces.inc
+}
