@@ -19,8 +19,8 @@ for j in range(10):
 
 plt.figure(figsize=(10, 4), dpi=300)
 plt.title("Genetic Progress")
-plt.ylabel("Error Rate")
-plt.xlabel("Population")
+plt.ylabel("Best-So-Far Misfit Value")
+plt.xlabel("Iterations")
 #plt.yscale('log')
 #plt.xscale('log')
 

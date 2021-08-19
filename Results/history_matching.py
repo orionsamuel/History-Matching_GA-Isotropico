@@ -66,27 +66,29 @@ for i in range(10):
     count = 0
     for value in values:
         instances = []
-        
         for j in range(len(real_water)):
-            instances.append(j)
+            instances.append((j+1)*250)
+            j = j + 250
 
         if(count == 0):
             #plt.title("Water Flow")
-            plt.ylabel("Water Cut")
-            plt.xlabel("Time")
+            plt.subplots_adjust(left=0.13, right=0.78, bottom=0.1, top=0.95)
+            plt.ylabel("Water Flow")
+            plt.xlabel("Time (in hours)")
             plt.yscale('log')
             plt.plot(instances, values[0][0], color='red', label ='Real')
-            plt.plot(instances, values[0][1], color='purple', label ='Predicted', linestyle = ':')
-            plt.legend(loc = 'upper right')
+            plt.plot(instances, values[0][1], color='purple', label ='Predicted', linestyle = '--')
+            plt.legend(loc = 'upper left', bbox_to_anchor=(1, 1))
             plt.savefig("Matchs/Matching Water_"+str(i)+" - Linhas.png")
         else:
             #plt.title("Oil Flow")
-            plt.ylabel("Oil Production")
-            plt.xlabel("Time")
+            plt.subplots_adjust(left=0.13, right=0.78, bottom=0.1, top=0.95)
+            plt.ylabel("Oil Flow")
+            plt.xlabel("Time (in hours)")
             plt.yscale('log')
             plt.plot(instances, values[1][0], color='red', label ='Real')
-            plt.plot(instances, values[1][1], color='purple', label ='Predicted', linestyle = ':')
-            plt.legend(loc = 'upper right')
+            plt.plot(instances, values[1][1], color='purple', label ='Predicted', linestyle = '--')
+            plt.legend(loc = 'upper left', bbox_to_anchor=(1, 1))
             plt.savefig("Matchs/Matching Oil_"+str(i)+" - Linhas.png")
         
         plt.clf()
