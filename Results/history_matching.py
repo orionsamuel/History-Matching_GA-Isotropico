@@ -71,21 +71,21 @@ for i in range(10):
             instances.append(j)
 
         if(count == 0):
-            plt.title("Water Flow")
-            plt.ylabel("Error Rate (Log Scale)")
+            #plt.title("Water Flow")
+            plt.ylabel("Water Cut")
             plt.xlabel("Time")
             plt.yscale('log')
             plt.plot(instances, values[0][0], color='red', label ='Real')
-            plt.plot(instances, values[0][1], color='purple', label ='Predicted')
+            plt.plot(instances, values[0][1], color='purple', label ='Predicted', linestyle = ':')
             plt.legend(loc = 'upper right')
             plt.savefig("Matchs/Matching Water_"+str(i)+" - Linhas.png")
         else:
-            plt.title("Oil Flow")
-            plt.ylabel("Error Rate (Log Scale)")
+            #plt.title("Oil Flow")
+            plt.ylabel("Oil Production")
             plt.xlabel("Time")
             plt.yscale('log')
             plt.plot(instances, values[1][0], color='red', label ='Real')
-            plt.plot(instances, values[1][1], color='purple', label ='Predicted')
+            plt.plot(instances, values[1][1], color='purple', label ='Predicted', linestyle = ':')
             plt.legend(loc = 'upper right')
             plt.savefig("Matchs/Matching Oil_"+str(i)+" - Linhas.png")
         
